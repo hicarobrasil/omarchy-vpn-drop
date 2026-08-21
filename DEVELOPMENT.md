@@ -9,7 +9,7 @@ Automate OpenVPN management by dropping `.ovpn` files into `~/.config/omarchy/vp
 - Project structure created in `~/omarchy-vpn-drop/`.
 - `README.md`, `LICENSE`, and `install.sh` base files created.
 - `bin/vpn-import.sh` implemented (feature branch: `feature/vpn-import`).
-- Pending implementation of UI widget (`ui/vpn-widget.js`).
+- `ui/vpn-widget.js` initial implementation (feature branch: `feature/vpn-ui`).
 - Pending implementation of polkit rules.
 
 ## Next Actions
