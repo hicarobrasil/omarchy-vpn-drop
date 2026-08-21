@@ -8,8 +8,9 @@ Automate OpenVPN management by dropping `.ovpn` files into `~/.config/omarchy/vp
 ## Current Status
 - Project structure created in `~/omarchy-vpn-drop/`.
 - `README.md`, `LICENSE`, and `install.sh` base files created.
-- Pending initialization as a Git repository.
-- Pending implementation of core logic (`vpn-import.sh`, `vpn-widget.js`).
+- `bin/vpn-import.sh` implemented (feature branch: `feature/vpn-import`).
+- Pending implementation of UI widget (`ui/vpn-widget.js`).
+- Pending implementation of polkit rules.
 
 ## Next Actions
 1. **Initialize Repo:** User to run `cd ~/omarchy-vpn-drop && git init` (and `gh repo create` if needed).
