@@ -1,0 +1,10 @@
+[Unit]
+Description=Omarchy VPN Drop Import Service
+After=network.target
+
+[Service]
+ExecStart=%h/omarchy-vpn-drop/bin/vpn-import.sh
+Restart=always
+
+[Install]
+WantedBy=default.target

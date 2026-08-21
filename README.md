@@ -9,3 +9,10 @@ Seamless OpenVPN management for Omarchy. Drop `.ovpn` files into `~/.config/omar
 ## How it works
 - `bin/vpn-import.sh` watches the config directory for new `.ovpn` files.
 - `ui/vpn-widget.js` provides the Quickshell UI to list and toggle connections.
+
+## Passwordless VPN Toggling (Polkit)
+To toggle VPNs without entering your password, apply the Polkit rule:
+
+```bash
+sudo cp ~/omarchy-vpn-drop/bin/90-vpn-toggle.rules /etc/polkit-1/rules.d/
+```
