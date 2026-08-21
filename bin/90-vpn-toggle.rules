@@ -1,6 +1,6 @@
 polkit.addRule(function(action, subject) {
     if (action.id == "org.freedesktop.NetworkManager.network-control" &&
-        subject.isInGroup("wheel")) {
+        (subject.isInGroup("wheel") || subject.isInGroup("sudo"))) {
         return polkit.Result.YES;
     }
 });
